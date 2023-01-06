@@ -126,6 +126,14 @@ li a {
 
 /*MEDIA QUERY*/
 
+@media (min-width: 361px) {
+    .main section article section {
+        display: block;
+    }
+
+    
+}
+
 @media (min-width: 768px) {
     .main-header-top-bar {
         display: flex;
