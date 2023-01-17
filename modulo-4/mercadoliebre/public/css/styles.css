@@ -15,10 +15,18 @@ h3{
 
 p{
     font-size: 12px;
+    margin: 10px;
 }
-div.top-header{
-    padding: 5%;
+
+/*HEADER*/
+
+.top-header{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
 }
+
+
 
 header{
     background-color: #EAC926;
@@ -47,25 +55,31 @@ header ul li a{
 
 header .form {
     display: flex;
-    width: 70%;
+    height: 35%;
+    margin: auto;
 }
 
-header .form .input{
+/*SEARCH*/
+
+.form{
     background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+header .form .input{
     color: #666;
-    padding: 2px;
-    font-size: 10px;
-    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    overflow: hidden;
 }
 
 header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
     color: #666;
-    width: 25px;
-    margin-left: 5px;
+    padding: 10px;
+}
+
+.fa-search{
+    margin: auto;
 }
 
 header div.top-header p{
@@ -74,11 +88,12 @@ header div.top-header p{
     margin-top: 10px;
 }
 
+/*HORIZONTAL NAV*/
 nav {
     display: none;
 }
 
-
+/*BURGER-MENU*/
 div.burger-menu{
     text-align: center;
 }
@@ -94,6 +109,7 @@ div.burger-menu i{
     width: 40px;
 }
 
+/*BOX-ARTICLE*/
 .price{
     font-size: 18px;
     padding-right: 10px;
@@ -119,6 +135,7 @@ section.banner img{
     width: 100%;
 }
 
+/*MAIN*/
 main{
     width: 90%;
     margin: 0 auto;
@@ -168,7 +185,6 @@ article div.main-article{
 
 .priceBox {
     display: flex;
-    /* justify-content: space-between; */
     align-items: stretch;
 }
 
@@ -210,8 +226,48 @@ article div.main-article{
 
 /*----------------------------TABLET----------------------------------*/
 
-@media (min-width: 361px){ 
-    main section article .description, nav{
+@media (min-width: 361px){
+
+    div.burger-menu {
+        display: none;
+    }
+
+    /*SEARCH*/
+    .logo, .form, .buy-card {
+        width: 33%;
+    }
+
+    .buy-card{
+        margin: auto;
+    }
+
+    .top-header .form{
+        height: 30px;
+    }
+    
+    header .form .input{
+        padding: 3px;
+        font-size: 12px;
+    }
+
+
+    /*HORIZONAL NAV*/
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav ul li{
+        padding: 5px;
+        margin: auto;
+    }
+
+    /*MAIN*/
+    main section article .description{
         display: block;
     }
 
