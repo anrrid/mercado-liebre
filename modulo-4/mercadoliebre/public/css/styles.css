@@ -22,8 +22,8 @@ p{
 
 .top-header{
     display: flex;
-    margin: 10px;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 
@@ -32,8 +32,12 @@ header{
     background-color: #EAC926;
 }
 
-header div.logo{
+/* header div.logo{
     width: 50%;
+} */
+
+.logo, .form, .buy-card {
+    width: 150px;
 }
 
 header div.logo{
@@ -158,6 +162,15 @@ main section article i,
     color: #39b54a;
 }
 
+.fa-truck:hover{
+    transition: 1000ms;
+    transform: rotate(-90deg);
+}
+
+main section article:hover .description {
+    display: block;
+}
+
 main section article i{
     display: block;
     font-size: 16px;
@@ -183,9 +196,20 @@ article div.main-article{
     position: relative;
 }
 
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
 .priceBox {
     display: flex;
     align-items: stretch;
+}
+
+/*LOGIN*/
+
+.login-btn:hover{
+    background-color: #3498db;
 }
 
 /*FOOTER*/
@@ -198,6 +222,10 @@ article div.main-article{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+.i-footer:hover{
+    color: #666;
 }
 
 .align-footer{
