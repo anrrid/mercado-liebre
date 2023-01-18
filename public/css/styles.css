@@ -36,8 +36,8 @@ header{
     width: 50%;
 } */
 
-.logo, .form, .buy-card {
-    width: 150px;
+.logo, .search, .buy-card {
+    width: 50%;
 }
 
 header div.logo{
@@ -59,22 +59,30 @@ header ul li a{
 
 header .form {
     display: flex;
-    height: 35%;
-    margin: auto;
+    height: 30px;
+    margin-top: 10px;
 }
 
 /*SEARCH*/
 
-.form{
+.search{
+    display: flex;
     background-color: #FFF;
     border-radius: 10px;
     border: none;
+    height: 30px;
+    margin-top: 10px;
 }
-header .form .input{
-    color: #666;
-    padding: 5px;
-    font-size: 15px;
-    overflow: hidden;
+
+.search input{
+    border: none;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.search .fa-search{
+    width: 20%;
+    margin: 5px;
 }
 
 header .form .submit{
@@ -82,9 +90,9 @@ header .form .submit{
     padding: 10px;
 }
 
-.fa-search{
+/* .fa-search{
     margin: auto;
-}
+} */
 
 header div.top-header p{
     width: 100%;
@@ -261,8 +269,8 @@ main section article:hover{
     }
 
     /*SEARCH*/
-    .logo, .form, .buy-card {
-        width: 33%;
+    .logo, .search, .buy-card {
+        width: 30%;
     }
 
     .buy-card{
@@ -279,6 +287,7 @@ main section article:hover{
     }
 
 
+
     /*HORIZONAL NAV*/
     nav{
         display: flex;
@@ -289,9 +298,21 @@ main section article:hover{
         display: flex;
     }
 
+    .first-ul{
+        margin-left: 10vw;
+    }
+
+    .second-ul{
+        margin-right: 10vw;
+    }
+
     nav ul li{
         padding: 5px;
         margin: auto;
+    }
+
+    nav ul li a {
+        font-size: 75%;
     }
 
     /*MAIN*/
@@ -322,4 +343,14 @@ main section article:hover{
         display: flex;
         flex-wrap: wrap;
     }
+
+    nav ul li a {
+        font-size: 100%;
+    }
+
+    .container-articles{
+        display: flex;
+        align-items: flex-start;
+    }
+
 }
