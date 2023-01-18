@@ -76,13 +76,8 @@ header ul li a{
 }
 
 .search .fa-search{
-    width: 20%;
     margin: 5px;
 }
-
-/* .fa-search{
-    margin: auto;
-} */
 
 header div.top-header p{
     width: 100%;
